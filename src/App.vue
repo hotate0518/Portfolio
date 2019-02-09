@@ -1,19 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div
+    id="app"
+    class="d-flex flex-column"
+  >
+    <navigation id="navigation" />
+    <main
+      id="main-page"
+      class="flex-grow-1"
+    >
+      <top-page id="top-page" />
+      <profile id="profile" />
+      <career id="career" />
+      <skill id="skill" />
+      <contact id="contact" />
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './pages/Navigation.vue';
+import TopPage from './pages/TopPage.vue';
+import Profile from './pages/Profile.vue';
+import Career from './pages/Career.vue';
+import Skill from './pages/Skill.vue';
+import Contact from './pages/Contact.vue';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Navigation,
+    TopPage,
+    Profile,
+    Career,
+    Skill,
+    Contact,
+  },
+};
 </script>
 
 <style>
@@ -22,7 +44,17 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: antiquewhite;
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#main-page {
+  overflow-y:auto;
+}
+
+#main-page > div {
+  height: 100%;
 }
 </style>
