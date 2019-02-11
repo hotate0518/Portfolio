@@ -1,3 +1,3 @@
 <template>
-  <div>toppage</div>
+  <div>TopPage</div>
 </template>
