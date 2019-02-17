@@ -5,9 +5,9 @@
       :key="naviItem.name"
       v-scroll-to="naviItem.scrollId"
     >
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center navigation-item">
         <img
-          class="navigation-icon"
+          class="icon mr-2"
           :src="naviItem.icon"
         >
         {{ naviItem.name }}
@@ -60,7 +60,10 @@ export default {
 
 
 <style scoped>
-.navigation-icon {
+.navigation-item {
+  color: antiquewhite;
+}
+.navigation-item .icon {
   width: 20px;
   height: 20px;
 }

@@ -57,4 +57,21 @@ export default {
 #main-page > div {
   height: 100%;
 }
+
+#main-page::-webkit-scrollbar{
+  width: 10px;
+}
+
+#main-page::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgb(74, 74, 153);
+}
+
+#main-page::-webkit-scrollbar-thumb{
+  background: rgb(79, 79, 139);
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px #000;
+}
 </style>

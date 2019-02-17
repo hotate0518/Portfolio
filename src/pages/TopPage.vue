@@ -1,10 +1,10 @@
 <template>
   <div class="top-page position-relative">
     <div class="title">
-      <h1>
+      <h1 class="my-name">
         Tanoue Yuki
       </h1>
-      <h2>
+      <h2 class="sub-title">
         portfolio
       </h2>
     </div>
@@ -24,5 +24,11 @@
   right: 0;
   height: 50%;
   margin: auto;
+}
+.title .my-name {
+  font-size: 4rem;
+}
+.title .sub-title {
+  font-size: 2.5rem;
 }
 </style>
