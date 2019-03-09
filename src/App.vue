@@ -52,10 +52,6 @@ export default {
   z-index: 3;
 }
 
-#main-page {
-  overflow-y:scroll;
-}
-
 #top-page {
   height: 100vh;
 }
@@ -64,22 +60,4 @@ export default {
   height: 90vh;
 }
 
-
-#main-page::-webkit-scrollbar{
-  width: 10px;
-  display: none;
-}
-
-#main-page::-webkit-scrollbar-track{
-  background: #fff;
-  border: none;
-  border-radius: 3px;
-  box-shadow: inset 0 0 5px rgb(74, 74, 153);
-}
-
-#main-page::-webkit-scrollbar-thumb{
-  background: rgb(79, 79, 139);
-  border-radius: 3px;
-  box-shadow: inset 0 0 5px #000;
-}
 </style>
