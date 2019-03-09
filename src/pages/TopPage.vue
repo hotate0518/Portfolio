@@ -25,6 +25,9 @@
   height: 50%;
   margin: auto;
 }
+.title {
+  color: ghostwhite;
+}
 .title .my-name {
   font-size: 4rem;
 }

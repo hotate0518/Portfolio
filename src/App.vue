@@ -3,14 +3,16 @@
     id="app"
     class="d-flex flex-column"
   >
-    <navigation id="navigation" />
+    <navigation
+      id="navigation"
+      class="shadow"
+    />
     <main
       id="main-page"
       class="flex-grow-1"
     >
       <top-page id="top-page" />
       <profile id="profile" />
-      <career id="career" />
       <skill id="skill" />
       <contact id="contact" />
     </main>
@@ -21,7 +23,6 @@
 import Navigation from './pages/Navigation.vue';
 import TopPage from './pages/TopPage.vue';
 import Profile from './pages/Profile.vue';
-import Career from './pages/Career.vue';
 import Skill from './pages/Skill.vue';
 import Contact from './pages/Contact.vue';
 
@@ -31,7 +32,6 @@ export default {
     Navigation,
     TopPage,
     Profile,
-    Career,
     Skill,
     Contact,
   },
@@ -44,19 +44,25 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: antiquewhite;
-  background-color: black;
+  color: dimgray;
+  background-color: ghostwhite;
   overflow: hidden;
   height: 100vh;
 }
 
 #main-page {
   overflow-y:auto;
-}
-
-#main-page > div {
   height: 100%;
 }
+
+#top-page {
+  height: 100%;
+}
+
+#profile {
+  height: 60%;
+}
+
 
 #main-page::-webkit-scrollbar{
   width: 10px;

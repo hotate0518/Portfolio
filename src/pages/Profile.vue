@@ -1,12 +1,27 @@
 <template>
-  <div>
-    <h1>Porfile</h1>
-    <b-container fluid>
-      <b-row>
+  <div class="d-flex flex-column">
+    <div class="h1 m-3">
+      <img
+        class="mr-2"
+        src="../assets/profile/profile.png"
+        width="44.5"
+      >
+      <b>PROFILE</b>
+    </div>
+
+    <b-container
+      fluid
+      class="flex-grow-1"
+    >
+      <b-row class="align-items-center h-100">
         <b-col sm="3">
-          自身のアイコン
+          <img
+            src="../assets/profile/icon.jpg"
+            width="200"
+            height="200"
+          >
         </b-col>
-        <b-col class="text-left">
+        <b-col class="text-left m-2">
           <dl>
             <dt class="h3">
               氏名
@@ -25,7 +40,12 @@
             </dt>
             <dd class="ml-3">
               <p>
-                はじめまして。
+                はじめまして。田上佑希
+                (<a href="https://twitter.com/hotateO158">
+                  @hotateO158
+                </a>)と申します。社会人歴は{{ getSocialWorkHistory }}年です。<br>
+                現在は、フルスタックエンジニアを目指し、バックエンド・フロントエンド問わず何でも取り組んでいます。
+                また、AWSでのインフラ整備も行っており、”一人でもサービスが作れる”人間となるため日々精進中です。
               </p>
             </dd>
           </dl>
@@ -34,3 +54,17 @@
     </b-container>
   </div>
 </template>
+
+<script >
+
+export default {
+  computed: {
+    getSocialWorkHistory() {
+      const now = new Date();
+      const start = new Date(2017, 4, 1);
+      return now.getFullYear() - start.getFullYear();
+    },
+  },
+
+};
+</script>

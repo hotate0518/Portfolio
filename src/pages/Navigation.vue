@@ -20,7 +20,6 @@
 import TopPageIcon from '../assets/toppage.png';
 import ProfileIcon from '../assets/profile.png';
 import SkillIcon from '../assets/skill.png';
-import CareerIcon from '../assets/career.png';
 import ContactIcon from '../assets/contact.png';
 
 export default {
@@ -36,11 +35,6 @@ export default {
           name: 'Profile',
           scrollId: '#profile',
           icon: ProfileIcon,
-        },
-        {
-          name: 'Career',
-          scrollId: '#career',
-          icon: CareerIcon,
         },
         {
           name: 'Skill',
@@ -61,7 +55,7 @@ export default {
 
 <style scoped>
 .navigation-item {
-  color: antiquewhite;
+  color:black;
   text-align: center;
 }
 .navigation-item .icon {
