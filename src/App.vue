@@ -7,7 +7,7 @@
       id="navigation"
       class="shadow"
     />
-    <main
+    <div
       id="main-page"
       class="flex-grow-1"
     >
@@ -15,7 +15,7 @@
       <profile id="profile" />
       <skill id="skill" />
       <contact id="contact" />
-    </main>
+    </div>
   </div>
 </template>
 
@@ -46,7 +46,6 @@ export default {
   text-align: center;
   color: dimgray;
   background-color: ghostwhite;
-  overflow: hidden;
   height: 100vh;
 }
 
@@ -57,6 +56,10 @@ export default {
 
 #top-page {
   height: 100%;
+}
+
+#contact {
+  height: 60%;
 }
 
 
