@@ -10,7 +10,9 @@
           class="icon mr-2"
           :src="naviItem.icon"
         >
-        {{ naviItem.name }}
+        <template v-if="$mq !== 'sm'">
+          {{ naviItem.name }}
+        </template>
       </div>
     </b-nav-item>
   </b-nav>

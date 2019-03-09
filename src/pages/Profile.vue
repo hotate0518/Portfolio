@@ -9,34 +9,31 @@
       <b>PROFILE</b>
     </div>
 
-    <b-container
-      fluid
-      class="flex-grow-1"
-    >
-      <b-row class="align-items-center h-100">
-        <b-col sm="3">
+    <div class="flex-grow-1 pl-4 pr-4 pb-4">
+      <div class="align-items-center h-100">
+        <div sm="3">
           <img
             src="../assets/profile/icon.jpg"
             width="200"
             height="200"
           >
-        </b-col>
-        <b-col class="text-left m-2">
+        </div>
+        <div class="text-left m-2">
           <dl>
             <dt class="h3">
-              氏名
+              <b>氏名</b>
             </dt>
             <dd class="ml-3">
               田上佑希
             </dd>
             <dt class="h3">
-              誕生日
+              <b>誕生日</b>
             </dt>
             <dd class="ml-3">
               1994年 5月 18日
             </dd>
             <dt class="h3">
-              自己紹介
+              <b>自己紹介</b>
             </dt>
             <dd class="ml-3">
               <p>
@@ -49,9 +46,9 @@
               </p>
             </dd>
           </dl>
-        </b-col>
-      </b-row>
-    </b-container>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

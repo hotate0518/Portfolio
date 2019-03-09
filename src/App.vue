@@ -59,13 +59,10 @@ export default {
   height: 100%;
 }
 
-#profile {
-  height: 60%;
-}
-
 
 #main-page::-webkit-scrollbar{
   width: 10px;
+  display: none;
 }
 
 #main-page::-webkit-scrollbar-track{
