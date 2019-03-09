@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-column">
+  <section class="d-flex flex-column">
     <div class="h1 m-3">
       <img
         class="mr-2"
@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script >

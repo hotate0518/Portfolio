@@ -1,5 +1,5 @@
 <template>
-  <div class="m-3">
+  <section class="m-3">
     <div class="h1 m-3">
       <img
         class="mr-2"
@@ -33,7 +33,7 @@
         </a>
       </span>
     </div>
-  </div>
+  </section>
 </template>
 
 <style>

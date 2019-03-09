@@ -1,5 +1,5 @@
 <template>
-  <div class="top-page position-relative">
+  <section class="top-page position-relative">
     <div class="title">
       <h1 class="my-name">
         Tanoue Yuki
@@ -8,7 +8,7 @@
         portfolio
       </h2>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

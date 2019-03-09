@@ -1,21 +1,23 @@
 <template>
-  <b-nav justified>
-    <b-nav-item
-      v-for="naviItem in navigationItems"
-      :key="naviItem.name"
-      v-scroll-to="naviItem.scrollId"
-    >
-      <div class="d-flex align-items-center justify-content-center navigation-item">
-        <img
-          class="icon mr-2"
-          :src="naviItem.icon"
-        >
-        <template v-if="$mq !== 'sm'">
-          {{ naviItem.name }}
-        </template>
-      </div>
-    </b-nav-item>
-  </b-nav>
+  <nav>
+    <b-nav justified>
+      <b-nav-item
+        v-for="naviItem in navigationItems"
+        :key="naviItem.name"
+        v-scroll-to="naviItem.scrollId"
+      >
+        <div class="d-flex align-items-center justify-content-center navigation-item">
+          <img
+            class="icon mr-2"
+            :src="naviItem.icon"
+          >
+          <template v-if="$mq !== 'sm'">
+            {{ naviItem.name }}
+          </template>
+        </div>
+      </b-nav-item>
+    </b-nav>
+  </nav>
 </template>
 
 <script>

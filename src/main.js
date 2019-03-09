@@ -8,10 +8,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 Vue.config.productionTip = false;
 Vue.use(VueScrollTo, {
-  container: 'main',
+  container: 'body',
   duration: 500,
   easing: 'ease',
-  offset: 0,
+  offset: -40,
   force: true,
   cancelable: true,
   onStart: false,

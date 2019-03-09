@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div class="h1 m-3">
       <img
         class="mr-2"
@@ -66,7 +66,7 @@
         </b-col>
       </b-row>
     </b-container>
-  </div>
+  </section>
 </template>
 
 <script>

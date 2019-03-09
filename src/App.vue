@@ -1,21 +1,19 @@
 <template>
   <div
     id="app"
-    class="d-flex flex-column"
   >
     <navigation
       id="navigation"
-      class="shadow"
+      class="shadow position-fixed"
     />
-    <div
+    <main
       id="main-page"
-      class="flex-grow-1"
     >
       <top-page id="top-page" />
       <profile id="profile" />
       <skill id="skill" />
       <contact id="contact" />
-    </div>
+    </main>
   </div>
 </template>
 
@@ -46,20 +44,24 @@ export default {
   text-align: center;
   color: dimgray;
   background-color: ghostwhite;
-  height: 100vh;
+}
+
+#navigation {
+  width: 100%;
+  background: ghostwhite;
+  z-index: 3;
 }
 
 #main-page {
-  overflow-y:auto;
-  height: 100%;
+  overflow-y:scroll;
 }
 
 #top-page {
-  height: 100%;
+  height: 100vh;
 }
 
 #contact {
-  height: 60%;
+  height: 90vh;
 }
 
 
