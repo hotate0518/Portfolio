@@ -12,6 +12,7 @@
       <top-page id="top-page" />
       <profile id="profile" />
       <skill id="skill" />
+      <career id="career" />
       <contact id="contact" />
     </main>
   </div>
@@ -23,6 +24,7 @@ import TopPage from './pages/TopPage.vue';
 import Profile from './pages/Profile.vue';
 import Skill from './pages/Skill.vue';
 import Contact from './pages/Contact.vue';
+import Career from './pages/Career.vue';
 
 export default {
   name: 'App',
@@ -31,6 +33,7 @@ export default {
     TopPage,
     Profile,
     Skill,
+    Career,
     Contact,
   },
 };

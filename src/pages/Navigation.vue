@@ -21,10 +21,11 @@
 </template>
 
 <script>
-import TopPageIcon from '../assets/toppage.png';
-import ProfileIcon from '../assets/profile.png';
-import SkillIcon from '../assets/skill.png';
-import ContactIcon from '../assets/contact.png';
+import TopPageIcon from '../assets/navigation/toppage.png';
+import ProfileIcon from '../assets/navigation/profile.png';
+import SkillIcon from '../assets/navigation/skill.png';
+import ContactIcon from '../assets/navigation/contact.png';
+import CareerIcon from '../assets/navigation/career.png';
 
 export default {
   data() {
@@ -44,6 +45,11 @@ export default {
           name: 'Skill',
           scrollId: '#skill',
           icon: SkillIcon,
+        },
+        {
+          name: 'Career',
+          scrollId: '#career',
+          icon: CareerIcon,
         },
         {
           name: 'Contact',

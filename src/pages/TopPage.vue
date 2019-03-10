@@ -13,7 +13,7 @@
 
 <style scoped>
 .top-page {
-  background-image: url('../assets/notebook.jpg');
+  background-image: url('../assets/toppage/notebook.jpg');
   background-size: cover;
 }
 .title {
