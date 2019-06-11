@@ -12,7 +12,7 @@
     <div class="icon">
       <span>
         <a
-          href="https://twitter.com/hotateO158"
+          href="https://twitter.com/you0158"
           target="blank"
         >
           <img
